@@ -1,0 +1,5 @@
+local internet = require("internet")
+local handle = internet.open(localhost, 1337)
+local data = handle:read(10)
+handle:write("1234")
+handle:close()
